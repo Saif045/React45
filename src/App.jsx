@@ -13,7 +13,6 @@ function App() {
 
       <Hero />
 
-      <div>sdad</div>
       <Analytics />
 
       <Newsletter />
