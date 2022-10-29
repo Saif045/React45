@@ -34,7 +34,12 @@ const navbar = () => {
           </Link>
         </li>
         <li className=" p-4 cursor-pointer">
-          <Link to="Prices" spy={true} smooth={true} offset={-50} duration={500}>
+          <Link
+            to="Prices"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}>
             Prices
           </Link>
         </li>
@@ -60,8 +65,6 @@ const navbar = () => {
       <button onClick={() => setNav(!nav)} className="flex md:hidden m-4">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </button>
-
-
 
       <div
         className={
