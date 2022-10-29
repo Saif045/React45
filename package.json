@@ -12,6 +12,7 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-icons": "^4.6.0",
+    "react-scroll": "^1.8.8",
     "react-typed": "^1.2.0"
   },
   "devDependencies": {

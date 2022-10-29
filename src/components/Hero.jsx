@@ -2,7 +2,7 @@ import React from 'react'
 import Typed from 'react-typed'
 const Hero = () => {
   return (
-    <div className=' text-white mt-40 h-screen '>
+    <div className=' text-white mt-40 h-screen w-full ' id='hero'>
 
        <div className=' max-w-[800px] mt-[-96px] w-full h-full  mx-auto text-center flex flex-col justify-center'>
         

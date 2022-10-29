@@ -4,5 +4,16 @@
 
 body {
     background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
+li .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #00df9a;
+}
+
+li a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #00df9a;
+}
