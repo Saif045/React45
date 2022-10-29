@@ -16,7 +16,7 @@ const navbar = () => {
         </Link>
       </h1>
       <ul className=" hidden md:flex">
-        <li className=" p-4 cursor-pointer active:pb-3 active:border-b-2">
+        <li className=" p-4 cursor-pointer">
           <Link to="hero" spy={true} smooth={true} offset={-50} duration={500}>
             Home
           </Link>
@@ -28,19 +28,19 @@ const navbar = () => {
             to="Resources"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-50}
             duration={500}>
             Resources
           </Link>
         </li>
         <li className=" p-4 cursor-pointer">
-          <Link to="Prices" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="Prices" spy={true} smooth={true} offset={-50} duration={500}>
             Prices
           </Link>
         </li>
         <li className=" p-4 cursor-pointer">
           {" "}
-          <Link to="About" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="About" spy={true} smooth={true} offset={-50} duration={500}>
             About
           </Link>
         </li>
@@ -50,7 +50,7 @@ const navbar = () => {
             to="Contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-50}
             duration={500}>
             Contact
           </Link>
@@ -69,17 +69,17 @@ const navbar = () => {
             ? " fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black ease-in-out duration-500"
             : `fixed left-[-100%]`
         }>
-        <h1 className=" w-full text-3xl font-bold text-[#00df9a] m-7 cursor-pointer">
+        <div className=" w-full text-3xl font-bold text-[#00df9a] m-7 cursor-pointer">
           <Link
             to="hero"
             spy={true}
             smooth={true}
             offset={-50}
             duration={500}
-            onclick={closeMenu}>
+            onClick={closeMenu}>
             REACT.
           </Link>
-        </h1>
+        </div>
 
         <ul className=" uppercase p-4 ">
           <li className=" p-4 border-b border-gray-400 cursor-pointer">
@@ -90,7 +90,7 @@ const navbar = () => {
               smooth={true}
               offset={-50}
               duration={500}
-              onclick={closeMenu}>
+              onClick={closeMenu}>
               Home
             </Link>{" "}
           </li>
@@ -100,7 +100,7 @@ const navbar = () => {
               to="Resources"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-50}
               duration={500}
               onClick={closeMenu}>
               Resources
@@ -112,7 +112,7 @@ const navbar = () => {
               to="Prices"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-50}
               duration={500}
               onClick={closeMenu}>
               Prices
@@ -124,7 +124,7 @@ const navbar = () => {
               to="About"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-50}
               duration={500}
               onClick={closeMenu}>
               About
@@ -136,7 +136,7 @@ const navbar = () => {
               to="Contact"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-50}
               duration={500}
               onClick={closeMenu}>
               Contact
