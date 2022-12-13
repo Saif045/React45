@@ -9,13 +9,13 @@ const navbar = () => {
   };
 
   return (
-    <div className="text-white fixed top-0 bg-black w-screen z-50 flex justify-between items-center h-24 px-10 md:px-20 xl:px-32">
-      <h1 className=" w-full text-3xl font-bold text-[#00df9a] cursor-pointer">
+    <div className="text-white fixed top-0 bg-black w-screen z-50 flex justify-between items-center h-24 sm:px-10 md:px-20 xl:px-32">
+      <h1 className="ml-2 w-full text-3xl font-bold text-[#00df9a] cursor-pointer">
         <Link to="hero" spy={true} smooth={true} offset={-50} duration={500}>
           REACT.
         </Link>
       </h1>
-      <ul className=" hidden md:flex">
+      <ul className=" hidden sm:flex">
         <li className=" p-4 cursor-pointer">
           <Link to="hero" spy={true} smooth={true} offset={-50} duration={500}>
             Home
@@ -62,7 +62,7 @@ const navbar = () => {
         </li>
       </ul>
 
-      <button onClick={() => setNav(!nav)} className="flex md:hidden m-4">
+      <button onClick={() => setNav(!nav)} className="flex sm:hidden m-4">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </button>
 
