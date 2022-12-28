@@ -1,6 +1,6 @@
 # React
 
-Welcome to the repository for our SunnySide app built with React, Tailwind CSS, Vite, and Framer Motion.
+Welcome to the repository for our React. app built with React, Tailwind CSS, Vite, and Framer Motion.
 
 Installation
 
